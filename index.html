@@ -22,10 +22,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#home" data-page="home" class="active">Home</a></li>
-        <li><a href="#skills" data-page="skills" class>Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Languages</a></li>
+        <li><a href="#" onclick="showHomePage()">Home</a></li>
+        <li><a href="#" onclick="showSkillsPage()">Skills</a></li>
+        <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
+        <li><a href="#" onclick="showLanguagesPage()">Languages</a></li>
       </ul>
     </header>
 
@@ -50,12 +50,12 @@
       </div>
 
       <div id="main">
-        <div class="page">
+        <div id="home" class="page">
           <h2>Home</h2>
           <p>About me</p>
         </div>
 
-        <div class="page">
+        <div id="skills" class="page">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">html</li>
@@ -64,12 +64,12 @@
           </ul>
         </div>
 
-        <div class="page">
+        <div id="projects" class="page">
           <h2>Projects</h2>
           <p>My projects</p>
         </div>
 
-        <div class="page">
+        <div id="languages" class="page">
           <h2>Known languages</h2>
           <table border="5">
             <tr>
