@@ -11,13 +11,13 @@
 // age = 29;
 // //console.info("Numele meu este: " + myName + " si am " + age + " ani !!");
 
-var jobTitle = "<span>Web Developer</span>  @Axon";
-var mottoElement = document.getElementById("motto");
+// var jobTitle = "<span>Web Developer</span>  @Axon";
+// var mottoElement = document.getElementById("motto");
 
-console.info(mottoElement);
+// console.info(mottoElement);
 
-jobTitle = mottoElement.innerHTML;
-console.info(jobTitle);
+// jobTitle = mottoElement.innerHTML;
+// console.info(jobTitle);
 
 //console.info(mottoElement);
 //console.warn(mottoElement.innerHTML);
@@ -36,35 +36,39 @@ console.info(jobTitle);
 // console.debug(person);
 // console.info(person.skills);
 
+function hidePage(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+function showPage(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function hideAllPages() {
+  hidePage("home");
+  hidePage("skills");
+  hidePage("projects");
+  hidePage("languages");
+}
+
 function showHomePage() {
-  //console.info("I should see home page");
-  document.getElementById("home").style.display = "block";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+  hideAllPages();
+  showPage("home");
 }
 
 function showSkillsPage() {
-  document.getElementById("skills").style.display = "block";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+  hideAllPages();
+  showPage("skills");
 }
 
 function showProjectsPage() {
-  //console.debug("show skills");
-  document.getElementById("projects").style.display = "block";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("languages").style.display = "none";
+  hideAllPages();
+  showPage("projects");
 }
 
 function showLanguagesPage() {
-  //debugger;
-  document.getElementById("languages").style.display = "block";
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
+  hideAllPages();
+  showPage("languages");
 }
 
 showHomePage();
