@@ -52,6 +52,7 @@ function showSkillsPage() {
 }
 
 function showProjectsPage() {
+  //console.debug("show skills");
   document.getElementById("projects").style.display = "block";
   document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
@@ -59,6 +60,7 @@ function showProjectsPage() {
 }
 
 function showLanguagesPage() {
+  //debugger;
   document.getElementById("languages").style.display = "block";
   document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
